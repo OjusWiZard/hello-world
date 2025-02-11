@@ -7,7 +7,7 @@ license: Apache-2.0
 fingerprint:
   README.md: bafybeifa3tgy23zmlrdobrw4og36pl7dny2zeiprxu5lwtjbvsl55fakqq
 fingerprint_ignore_patterns: []
-agent: nrosavalory/langchain_basic:0.1.0:bafybeiawvuaebuyqxc4lmsjz3x5mobueneswcigmkm7yf6s6n7jjy6xxle
+agent: nrosavalory/langchain_basic:0.1.0:bafybeiawcpeumgsj5uhaoxctniswwe4cqpr444ygrh2hkevehy7ihztj2e
 number_of_agents: 1
 deployment: {}
 ---
@@ -20,3 +20,9 @@ config:
       chain_id: ${GNOSIS_CHAIN_ID:int:100}
       poa_chain: ${IS_POA_CHAIN:bool:false}
       default_gas_price_strategy: ${DEFAULT_GAS_PRICE_STRATEGY:str:eip1559}
+---
+public_id: nrosavalory/configs:0.19.0
+type: connection
+config:
+  TAVILY_API_KEY: ${TAVILY_API_KEY:str:XXXXXXX}
+  OPENAI_API_KEY: ${OPENAI_API_KEY:str:yyyyyyyy}
